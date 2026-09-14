@@ -13,6 +13,8 @@
     "start": "node scripts/local.mjs",
     "local:setup": "node scripts/local.mjs --setup-only",
     "typecheck": "tsc --noEmit --incremental false",
+    "build:web": "vite build --config vite.web.config.ts",
+    "preview:web": "vite preview --config vite.web.config.ts",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
   },
