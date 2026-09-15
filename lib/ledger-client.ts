@@ -21,7 +21,7 @@ export async function ledgerRequest(options: RequestInit = {}): Promise<Response
     const input = method === 'GET' ? null : JSON.parse(String(options.body));
     if (method !== 'GET' && (typeof input?.id !== 'string' || !/^[a-zA-Z0-9-]{1,80}$/.test(input.id))) throw new Error('잘못된 기록입니다.');
     if (method === 'POST') {
-      const limits: Record<string, number> = { count: 10000, meso: 1e12, pieces: 1e6, price: 1e9 };
+      const limits: Record<string, number> = { count: 10000, meso: 1e12, pieces: 1e6, price: 1e9, createdAt: Number.MAX_SAFE_INTEGER };
       if (typeof input.date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(input.date) || !Number.isFinite(Date.parse(input.date)) || new Date(input.date).toISOString().slice(0, 10) !== input.date || Object.entries(limits).some(([key, max]) => !Number.isSafeInteger(input[key]) || input[key] < 0 || input[key] > max)) throw new Error('날짜와 0 이상의 정수를 입력하세요.');
     }
     if (!['GET', 'POST', 'DELETE'].includes(method)) throw new Error('지원하지 않는 작업입니다.');
