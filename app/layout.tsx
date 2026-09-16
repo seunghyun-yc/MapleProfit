@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./fee.css";
 
 export const metadata: Metadata = {
   title: "메이플 사냥장부 | 소재비 수익 계산기",

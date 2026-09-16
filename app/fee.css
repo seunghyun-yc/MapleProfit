@@ -1,0 +1,72 @@
+.fee-options {
+  border: 0;
+  padding: 0;
+  margin: 18px 0 0;
+}
+
+.fee-options legend {
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.fee-options > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.fee-options label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #dfe4eb;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.fee-options label.selected {
+  border-color: #df7b38;
+  background: #fff8f3;
+  box-shadow: 0 0 0 2px #ee9c5314;
+}
+
+.fee-options input {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: #df6d24;
+}
+
+.fee-options span {
+  display: grid;
+  line-height: 1.25;
+}
+
+.fee-options b {
+  font-size: 13px;
+}
+
+.fee-options small {
+  font-size: 11px;
+  color: #7e8999;
+  font-weight: 400;
+}
+
+.estimate p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #7e8999;
+}
+
+.fee-line {
+  color: #b56531 !important;
+}
+
+.grouped-row td:nth-child(2) small {
+  white-space: normal;
+}
