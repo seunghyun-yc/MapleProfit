@@ -70,3 +70,55 @@
 .grouped-row td:nth-child(2) small {
   white-space: normal;
 }
+
+.workspace {
+  align-items: stretch;
+}
+
+.entry-panel {
+  align-self: stretch;
+}
+
+.sort-toggle {
+  gap: 4px;
+  min-height: 32px;
+  padding: 5px 10px;
+  color: #526074;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 16px 18px 18px;
+  border-top: 1px solid #eef0f3;
+  color: #7e8999;
+  font-size: 12px;
+}
+
+.pagination button {
+  gap: 3px;
+  min-height: 32px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.pagination b {
+  color: #38465a;
+}
+
+@media (max-width: 740px) {
+  .records-tools {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .sort-toggle,
+  .view-toggle {
+    flex: 1;
+  }
+}
