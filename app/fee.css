@@ -111,6 +111,20 @@
   color: #38465a;
 }
 
+@media (min-width: 1051px) {
+  .stats {
+    grid-template-columns: 370px repeat(3, minmax(0, 1fr));
+    column-gap: 25px;
+  }
+}
+
+@media (min-width: 741px) and (max-width: 1050px) {
+  .stats {
+    grid-template-columns: 330px minmax(0, 1fr);
+    column-gap: 25px;
+  }
+}
+
 @media (max-width: 740px) {
   .records-tools {
     width: 100%;
