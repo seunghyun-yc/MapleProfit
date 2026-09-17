@@ -111,6 +111,44 @@
   color: #38465a;
 }
 
+.row-actions {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.row-actions button {
+  width: auto;
+  min-width: 82px;
+  min-height: 34px;
+  gap: 6px;
+  padding: 6px 9px;
+  border: 1px solid #d8dee7;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.row-actions .edit-action {
+  color: #526074;
+  background: #f8fafc;
+}
+
+.row-actions .edit-action:hover:not(:disabled) {
+  border-color: #aeb9c8;
+  background: #f1f4f8;
+}
+
+.row-actions .delete-action {
+  color: #a64034;
+  border-color: #e4c8c4;
+  background: #fff8f7;
+}
+
+.row-actions .delete-action:hover:not(:disabled) {
+  border-color: #c98880;
+  background: #fff0ee;
+}
+
 @media (min-width: 1051px) {
   .stats {
     grid-template-columns: 370px minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 0.85fr);
